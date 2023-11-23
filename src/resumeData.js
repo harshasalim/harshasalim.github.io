@@ -18,9 +18,9 @@ let resumeData = {
       className: "fa fa-github",
     },
     {
-      name: "skype",
-      url: "http://twitter.com/rbhatia46",
-      className: "fa fa-twitter",
+      name: "email",
+      url: "mailto: harshasalimv@gmail.com",
+      className: "fa fa-envelope",
     },
   ],
   aboutme:
