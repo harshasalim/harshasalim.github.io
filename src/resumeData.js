@@ -62,6 +62,14 @@ let resumeData = {
       Achievements:
         "Automated functional and performance testing of multiple banking applications, cloud modernization of legacy application",
     },
+    {
+      CompanyName: "QikPik India",
+      specialization: "Development Intern",
+      MonthOfLeaving: "Aug 2021 -",
+      YearOfLeaving: "June 2022",
+      Achievements:
+        "Automated functional and performance testing of multiple banking applications, cloud modernization of legacy application",
+    },
   ],
   skillsDescription: "Your skills here",
   skills: [
