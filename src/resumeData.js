@@ -5,7 +5,7 @@ let resumeData = {
   linkedinId: "https://www.linkedin.com/in/harshasalim/",
   skypeid: "live:.cid.46c03554e737cb09",
   roleDescription:
-    "I enjoy exploring various aspects within Computer Science, write clean high performant code. I am currently exploring distributed systems.",
+    "I write clean, highly performant code. I enjoy problem-solving and exploring various aspects within Computer Science. I am currently exploring design patterns and distributed systems.",
   socialLinks: [
     {
       name: "linkedin",
@@ -24,7 +24,7 @@ let resumeData = {
     },
   ],
   aboutme:
-    "I am currently working as a Developer Consultant in Thoughtworks. I enjoy learning new topics within Computer Science, and love experimenting using personal projects. I also enjoy dancing, listening to various podcasts and watching anime during my free time. Also love cats <3",
+    "I am currently working as a Developer Consultant in Thoughtworks where I mostly develop applications. I enjoy learning new topics within Computer Science, and love experimenting using personal projects. I have explored various topics in the past few years, including Blockchain, Distributed Systems, Security and Cloud Computing. I also have started writing technical blogs to document my learnings. I enjoy contributing to the women dev communities as much as I love learning from it, and am active member of many. In my free time, I enjoy going to the gym, dancing, listening to various podcasts and watching anime. I used to get quite anxious interacting with new people, but I am getting mcuh better at it. Last, but not the least, I love cats <3",
   address: "India",
   website: "https://harshasalim.github.io/",
   education: [
@@ -71,16 +71,92 @@ let resumeData = {
         "Automated functional and performance testing of multiple banking applications, cloud modernization of legacy application",
     },
   ],
-  skillsDescription: "Your skills here",
+  skillsDescription:
+    "These are majority of the skills I gained during my education and employment",
   skills: [
     {
       skillname: "HTML5",
+      level: "sixty",
     },
     {
       skillname: "CSS",
+      level: "forty",
     },
     {
       skillname: "Reactjs",
+      level: "eighty",
+    },
+    {
+      skillname: "React Native",
+      level: "eighty",
+    },
+    {
+      skillname: "Flutter",
+      level: "sixty",
+    },
+    {
+      skillname: "Java",
+      level: "eighty",
+    },
+    {
+      skillname: "C++",
+      level: "eighty",
+    },
+    {
+      skillname: "Kotlin",
+      level: "hundred",
+    },
+    {
+      skillname: "Spring Boot",
+      level: "eighty",
+    },
+    {
+      skillname: "PostgreSQL",
+      level: "fifty",
+    },
+    {
+      skillname: "Auth0",
+      level: "sixty",
+    },
+    {
+      skillname: "Quartz",
+      level: "fiftyfive",
+    },
+    {
+      skillname: "Domain Driven Design",
+      level: "forty",
+    },
+    {
+      skillname: "Distributed Systems",
+      level: "fifty",
+    },
+    {
+      skillname: "Github",
+      level: "hundred",
+    },
+    {
+      skillname: "AWS",
+      level: "forty",
+    },
+    {
+      skillname: "Test Driven Development",
+      level: "ninety",
+    },
+    {
+      skillname: "Kong API Gateway",
+      level: "fifty",
+    },
+    {
+      skillname: "OpenAPI Specification",
+      level: "eighty",
+    },
+    {
+      skillname: "Selenium",
+      level: "sixty",
+    },
+    {
+      skillname: "JMeter",
+      level: "ninety",
     },
   ],
   portfolio: [

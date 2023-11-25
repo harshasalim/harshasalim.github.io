@@ -1,52 +1,8 @@
-import React, { Component, useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import React, { Component } from "react";
 
-const Header = (props) => {
-  const location = useLocation();
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const handleItemClick = (event, index) => {
-    setSelectedIndex(index);
-  };
-
-  useEffect(() => {
-    const findCurrentPathname = () => {
-      if (location.pathname === "/") {
-        setSelectedIndex(0);
-      }
-      if (location.pathname === "/home") {
-        setSelectedIndex(0);
-      }
-      if (location.pathname === "/about") {
-        setSelectedIndex(1);
-      }
-      if (location.pathname === "/resume") {
-        setSelectedIndex(2);
-      }
-      if (location.pathname === "/contact") {
-        setSelectedIndex(3);
-      }
-    };
-    console.log("before" + selectedIndex);
-    findCurrentPathname();
-  }, [selectedIndex, location]);
-
-  return (
-    <HeaderComponent
-      location={location}
-      selectedIndex={selectedIndex}
-      {...props}
-    />
-  );
-};
-
-export default class HeaderComponent extends Component {
-  onChange = (location) => {
-    this.props.location(location);
-  };
+export default class Header extends Component {
   render() {
     let resumeData = this.props.resumeData;
-
     return (
       <React.Fragment>
         <header id="home">
@@ -58,18 +14,18 @@ export default class HeaderComponent extends Component {
               Hide navigation
             </a>
             <ul id="nav" className="nav">
-              <li className="current">
-                <a className="smoothscroll" href="#home">
-                  Home {this.props.selectedIndex}
+              <li>
+                <a className="smoothscroll current" id="homeLink" href="#home">
+                  Home
                 </a>
               </li>
               <li>
-                <a className="smoothscroll" href="#about">
+                <a className="smoothscroll" id="aboutLink" href="#about">
                   About
                 </a>
               </li>
               <li>
-                <a className="smoothscroll" href="#resume">
+                <a className="smoothscroll" id="resumeLink" href="#resume">
                   Resume
                 </a>
               </li>
@@ -79,7 +35,7 @@ export default class HeaderComponent extends Component {
                 </a>
               </li> */}
               <li>
-                <a className="smoothscroll" href="#contact">
+                <a className="smoothscroll" id="contactLink" href="#contact">
                   Contact
                 </a>
               </li>
