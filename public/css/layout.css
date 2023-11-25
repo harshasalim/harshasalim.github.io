@@ -30,7 +30,7 @@ body { background: #0f0f0f; }
 
 header {
    position: relative;
-   height: 800px;
+   height: 100vh;
    min-height: 500px;
    width: 100%;
    /* background: #161415 url(../images/header-background.jpg) no-repeat top center; */
@@ -179,8 +179,9 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
 
+ul#nav li a.current,
+ul#nav li a:hover { color: #F06000; }
 
 /* ------------------------------------------------------------------ */
 /* c. About Section
@@ -208,7 +209,7 @@ ul#nav li.current a { color: #F06000; }
 #about .profile-pic {
    position: relative;
    display: flex;
-   justify-content: flex-start;
+   align-self: stretch;
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
@@ -322,88 +323,89 @@ ul#nav li.current a { color: #F06000; }
   	height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
-}
-
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
+   -moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
 }
-.illustrator {
-  	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+
+.forty {
+   width: 40%;
 }
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+.fifty {
+   width: 50%;
 }
-.css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+.fiftyfive {
+   width: 55%;
 }
-.html5 {
-  	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+.sixty {
+  	width: 60%;
 }
-.jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+.eighty {
+   width: 80%;
+}
+.ninety {
+   width: 90%;
+}
+.hundred {
+  	width: 100%;
 }
 
-@-moz-keyframes photoshop {
+@-moz-keyframes sixty {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-moz-keyframes illustrator {
+@-moz-keyframes fiftyfive {
   0%   { width: 0px;  }
   100% { width: 55%;  }
 }
-@-moz-keyframes wordpress {
+@-moz-keyframes fifty {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
-@-moz-keyframes css {
+@-moz-keyframes ninety {
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@-moz-keyframes html5 {
+@-moz-keyframes eighty {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-moz-keyframes jquery {
+@-moz-keyframes forty {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 40%;  }
 }
+@-moz-keyframes hundred {
+   0%   { width: 0px;  }
+   100% { width: 100%;  }
+ }
 
-@-webkit-keyframes photoshop {
+@-webkit-keyframes sixty {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-webkit-keyframes illustrator {
+@-webkit-keyframes fiftyfive {
   0%   { width: 0px;  }
   100% { width: 55%;  }
 }
-@-webkit-keyframes wordpress {
+@-webkit-keyframes fifty {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
-@-webkit-keyframes css {
+@-webkit-keyframes ninety {
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@-webkit-keyframes html5 {
+@-webkit-keyframes eighty {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes jquery {
+@-webkit-keyframes forty {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 40%;  }
 }
+@-webkit-keyframes hundred {
+   0%   { width: 0px;  }
+   100% { width: 100%;  }
+ }
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
@@ -930,6 +932,7 @@ footer {
    font-size: 14px;
    text-align: center;
    position: relative;
+   height: 50vh;
 }
 
 footer a, footer a:visited { color: #525252; }
