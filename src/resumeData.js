@@ -34,7 +34,7 @@ let resumeData = {
       MonthOfPassing: "Aug",
       YearOfPassing: "2021",
       Achievements:
-        "Graduated as the batch topper with a CGPA of 9.27/10, Class representative for all four years",
+        "Graduated as the batch topper with a CGPA of 9.27/10, and was the Class Representative",
     },
     {
       UniversityName: "Abu Dhabi Indian School",
@@ -52,7 +52,7 @@ let resumeData = {
       MonthOfLeaving: "June 2022 -",
       YearOfLeaving: "Present",
       Achievements:
-        "Created a set of APIs for a remortgaging firm, and implemented an asynchronous system to automate many of its actions",
+        "Created a set of APIs for a remortgaging company. Implemented an asynchronous system to automate many of its actions to ensure minimal actions from the user. Played the role of Security Champion for the team. Leaded multiple releases and owned the delivery of multiple key features. Contributed to one of their open source projects - appium-reporter-plugin",
     },
     {
       CompanyName: "Unisys India",
@@ -60,7 +60,7 @@ let resumeData = {
       MonthOfLeaving: "Aug 2021 -",
       YearOfLeaving: "June 2022",
       Achievements:
-        "Automated functional and performance testing of multiple banking applications, cloud modernization of legacy application",
+        "Automated functional and performance testing of APIs and UI of multiple banking applications, thereby increasing identifying performance bottlenecks and increasing efficiency. Performed research on cloud modernization of a legacy application. Managed a new joiner and helped her onboard and delegated responsibilities to her",
     },
     {
       CompanyName: "QikPik India",
@@ -68,7 +68,7 @@ let resumeData = {
       MonthOfLeaving: "Aug 2021 -",
       YearOfLeaving: "June 2022",
       Achievements:
-        "Automated functional and performance testing of multiple banking applications, cloud modernization of legacy application",
+        "Designed and developed a webpage using Flutter Web. This was created to replace a Telegram bot to give print orders online, which made the product more accessible and attracted more customers",
     },
   ],
   skillsDescription:
