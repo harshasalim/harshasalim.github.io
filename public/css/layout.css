@@ -932,7 +932,7 @@ footer {
    font-size: 14px;
    text-align: center;
    position: relative;
-   height: 50vh;
+   height: 20vh;
 }
 
 footer a, footer a:visited { color: #525252; }
