@@ -18,7 +18,7 @@ fileignoreconfig:
   - filename: public/js/jquery-migrate-1.2.1.min.js
     checksum: df860ee51d3a7ff73af86ab98870ece9b27b0152ab31fa1ec4a60bdfe85b73e2
   - filename: src/resumeData.js
-    checksum: 9edee0adfb5b68dd8258c263619bf93f2b93f2fac79a8ebf33624893a16ca82f
+    checksum: 45733e42241f6fbac1821ef5b888e6586f7dbe8a6a479c029be59ec2e116450e
   - filename: src/components/Header.js
     checksum: 98cdde6013e107624175cc123b809a5200d28a9a8327b28059f6ccc018a3d74f
   - filename: public/js/magnific-popup.js
