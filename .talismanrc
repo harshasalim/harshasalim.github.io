@@ -1,6 +1,6 @@
 fileignoreconfig:
   - filename: package-lock.json
-    checksum: 2eff3aa60898a6a1c3a8b955a6184e9937e5ebafae230a0320fc08572128b8f1
+    checksum: 00368dbb500139789c389c62e7c09d2c567c571ec726d27897d8fd773805f413
   - filename: public/css/fontello/css/fontello-embedded.css
     checksum: b1133b4290af32fb24638bd91859b858cb47f7a18aa53aba8700853778761f5d
   - filename: public/css/font-awesome/css/font-awesome.css
