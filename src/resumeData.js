@@ -4,6 +4,8 @@ let resumeData = {
   role: "full-stack developer",
   linkedinId: "https://www.linkedin.com/in/harshasalim/",
   skypeid: "live:.cid.46c03554e737cb09",
+  resumeLink:
+    "https://docs.google.com/document/d/e/2PACX-1vTMKFzrsnW7PYmH54K0FVpHOF8ZJy6jZKOOJidrlBswrVCLJbiohmJ9Vi0c8PU2egNiYFi3iJo9orvd/pub",
   roleDescription:
     "I write clean, highly performant code. I enjoy problem-solving and exploring various aspects within Computer Science. I am currently exploring design patterns and distributed systems.",
   socialLinks: [

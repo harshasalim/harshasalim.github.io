@@ -13,7 +13,11 @@ export default class Resume extends Component {
           <div className="nine columns main-col">
             <div className="row item">
               <div className="twelve columns">
-                <a href="resume.pdf" target="_blank" className="resumeLink">
+                <a
+                  href={resumeData.resumeLink}
+                  target="_blank"
+                  className="resumeLink"
+                >
                   Download Resume as PDF
                 </a>
               </div>
