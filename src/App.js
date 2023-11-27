@@ -20,7 +20,6 @@ class App extends Component {
   handleScroll() {
     let sections = document.querySelectorAll("section");
     sections = [...sections, document.getElementById("home")];
-    // sections.add(document.getElementById("home"));
     let navLinks = document.querySelectorAll("header nav a");
 
     window.onscroll = () => {
