@@ -29,4 +29,12 @@ fileignoreconfig:
     checksum: 157d601d074e69a5654732803ce80c7a8deee536e3c0320de458bd4baf787974
   - filename: public/js/jquery-1.10.2.min.js
     checksum: 88bc70486663466d9f51c0361681b184962398cdfd7fb6659f55c12a2180f8a6
+  - filename: static/js/main.a2f3341b.js.map
+    checksum: 78d2e3a36c19ec3b1356c8ecb29f65578a096e22d5aeb6a48f03c53872328572
+  - filename: static/js/main.a2f3341b.js
+    checksum: 55dda74b560b9ee63a32ae2fb85107b38297277975d58e70a21daa55c93edabd
+  - filename: static/js/787.5045353a.chunk.js.map
+    checksum: 27fa0ab605a6563196c88e2756c66a6c838a4732d863b77e557c7a5e81492439
+  - filename: static/js/787.5045353a.chunk.js
+    checksum: fb0ea77ac92d4a487edf9864face29aacd3aae2bea45bca379f1c80dd5b4097c
 version: ""
