@@ -4,11 +4,7 @@ type: experience
 description: Full-time professional work experience
 ---
 
-# Professional Experience
-
-## Full-Time Work Experience
-
-### Consultant Developer
+# Consultant Developer
 **Thoughtworks** | *India* | *June 2022 - June 2024*
 
 Led full-stack development and infrastructure design for enterprise clients, specializing in microservices architecture and cloud infrastructure on AWS.
@@ -22,7 +18,7 @@ Led full-stack development and infrastructure design for enterprise clients, spe
 - **Security Leadership:** Served as Security Champion to amplify application security practices at team level
 - **Open Source Contribution:** Optimized report generation process in open-source Appium report generator project
 
-### Associate App Dev Engineer
+# Associate App Dev Engineer
 **Unisys** | *Bengaluru, India* | *August 2021 - May 2022*
 
 Managed multiple concurrent projects focusing on banking application testing, automation, and modernization initiatives.
