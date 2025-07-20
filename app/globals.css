@@ -316,6 +316,18 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.header-bar {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 35px;
+    overflow-x: auto;
+    transition: background-color 0.3s ease;
+    color: var(--text-secondary);
+}
+
 /* Tab Bar */
 .tab-bar {
     background-color: var(--bg-secondary);
