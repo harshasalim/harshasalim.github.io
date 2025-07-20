@@ -44,7 +44,7 @@ const THEME_ICONS = {
   light: 'fa-sun',
   dark: 'fa-moon'
 }
-const IFRAME_HEIGHT = '600px'
+let IFRAME_HEIGHT = '600px'
 
 // Helper function for file headers
 const createFileHeader = (frontmatter) => frontmatter?.title && (
@@ -327,11 +327,14 @@ export default function Home() {
     }
   }, [isClientMounted, openTabs, fileContents, getFileTitle])
 
-  // Initialize theme and file structure
+  // Initialize theme and file structure, and extract window height
   useEffect(() => {
     const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) || 'auto'
     setCurrentTheme(savedTheme)
     applyTheme(savedTheme)
+
+    // Find the height of the window
+    IFRAME_HEIGHT = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
     
     // Import and set file structure
     const loadFileStructure = async () => {
@@ -632,28 +635,28 @@ export default function Home() {
         <div className="welcome-screen">
           <header className="welcome-header">
             <h1>Harsha Salim</h1>
-            <p>Hi! I'm a Computer Science graduate student. I'm a software engineer interested in distributed systems, databases and blockchain, and I'm currently interning at Alchemy. This is my personal website inspired by VSCode.</p>
+            <p>Hi! I'm a Computer Science graduate student. I'm a software engineer interested in distributed systems, databases and blockchain, and currently interning at Alchemy. This is my personal website inspired by VSCode.</p>
           </header>
           
           <section className="welcome-sections">
             <div className="welcome-section">
               <h3><i className="fas fa-graduation-cap"></i> University of Southern California (USC)</h3>
-              <p>I'm currently a graduate student at USC, Los Angeles, where I'm pursuing a Master of Science in Computer Science.</p>
+              <p>Graduate student at USC, Los Angeles, pursuing a Master of Science in Computer Science</p>
             </div>
             
             <div className="welcome-section">
               <h3><i className="fas fa-building"></i> Alchemy</h3>
-              <p>I'm currently interning at Alchemy, New York, where I'm in the Data Services team.</p>
+              <p>Interning at Alchemy, New York, in the Data Services team</p>
             </div>
             
             <div className="welcome-section">
               <h3><i className="fas fa-bullseye"></i> Focus</h3>
-              <p>I'm interested in distributed systems, databases and blockchain, and I'm working on related projects. Let me know if you want to collaborate!</p>
+              <p>Interested in distributed systems, databases and blockchain, and working on related projects. Let me know if you want to collaborate!</p>
             </div>
             
             <div className="welcome-section">
-              <h3><i className="fas fa-handshake"></i> Interested in</h3>
-              <p>I'm looking for 2026 full time software engineering roles, and I'm open to remote work.</p>
+              <h3><i className="fas fa-handshake"></i> Open to work</h3>
+              <p>Looking for 2026 full time software engineering roles, and open to remote work.</p>
             </div>
           </section>
           
@@ -736,6 +739,11 @@ export default function Home() {
       </aside>
 
       <main className="main-content">
+        <div className = "header-bar">
+            <span>
+              Harsha Salim - Personal Portfolio
+            </span>
+            </div>
         <div className="tab-bar">
           {openTabs.map(fileName => {
             const displayName = getFileTitle(fileName)
