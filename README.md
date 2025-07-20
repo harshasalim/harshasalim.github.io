@@ -1,4 +1,4 @@
-# VS Code Inspired Website - Next.js
+# VS Code Inspired Website - Personal Portfolio
 
 A responsive and expandable web interface inspired by Visual Studio Code, built with Next.js and deployed to Vercel.
 
@@ -78,7 +78,7 @@ vercel
 
 - **File structure**: Edit the file tree structure in `app/page.js`
 - **Themes**: Modify theme colors in `app/globals.css`
-- **Content**: Add new file content in the `sampleContent` object
+- **Content**: Add new file content in the `public/content` object
 - **Styling**: All VS Code authentic styling is in `app/globals.css`
 
 ## Technologies Used
@@ -88,7 +88,3 @@ vercel
 - **CSS Custom Properties** - Theme system
 - **Font Awesome 6** - Icons
 - **Vercel** - Deployment platform
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE). 
