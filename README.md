@@ -28,6 +28,10 @@ npm run dev
 
 3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+### Note
+
+There are environment variables which have to be configured for the contact me form to work - Just set the email to a Google email[this will be the recipient's email], and generate an app password for the same account and include that in too.
+
 ### Building for Production
 
 ```bash
@@ -38,29 +42,7 @@ This will create a static export in the `out/` directory.
 
 ## Deployment to Vercel
 
-### Option 1: Deploy with Vercel CLI
-
-1. Install Vercel CLI:
-```bash
-npm i -g vercel
-```
-
-2. Deploy:
-```bash
-vercel
-```
-
-### Option 2: Deploy from GitHub
-
-1. Push your code to a GitHub repository
-2. Go to [vercel.com](https://vercel.com) and import your repository
-3. Vercel will automatically detect Next.js and deploy
-
-### Option 3: Drag & Drop
-
-1. Run `npm run build`
-2. Go to [vercel.com](https://vercel.com)
-3. Drag and drop the `out/` folder
+This project is deployed to Vercel, and the live site gets updated on every push to main - so be careful!
 
 ## Project Structure
 
