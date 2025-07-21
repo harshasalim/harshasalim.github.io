@@ -5,6 +5,14 @@ type: "contact"
 
 I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just want to say hello, feel free to reach out.
 
+- **LinkedIn**: <a href="https://linkedin.com/in/harshasalim" target="_blank" rel="noopener noreferrer">Connect with me professionally</a>
+- **GitHub**: <a href="https://github.com/harshasalim" target="_blank" rel="noopener noreferrer">Check out my code</a>
+- **Email**: <a href="mailto:harshasalim19@gmail.com">Send me an email</a>
+
+---
+
+## Contact Form
+
 <div class="contact-container">
 <form id="contact-form" class="contact-form">
 <div style="display: none;">
@@ -62,13 +70,5 @@ Clear Form
   
 
 </div>
-
----
-
-## Alternative Contact Methods
-
-- **LinkedIn**: <a href="https://linkedin.com/in/harshasalim" target="_blank" rel="noopener noreferrer">Connect with me professionally</a>
-- **GitHub**: <a href="https://github.com/harshasalim" target="_blank" rel="noopener noreferrer">Check out my code</a>
-- **Email**: <a href="mailto:harshasalim19@gmail.com">Send me an email</a>
 
 *I typically respond to messages within 24 hours. Looking forward to hearing from you!* 
