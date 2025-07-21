@@ -1,4 +1,5 @@
 import './globals.css'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata = {
   title: 'Harsha Salim - Portfolio',
@@ -18,7 +19,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#007acc" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />  
+      </body>
     </html>
   )
 } 

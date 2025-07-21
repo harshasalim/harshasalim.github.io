@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "gray-matter": "^4.0.3",
     "isomorphic-dompurify": "^2.26.0",
     "marked": "^16.0.0",
