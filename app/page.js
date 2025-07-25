@@ -635,7 +635,7 @@ export default function Home() {
         <div className="welcome-screen">
           <header className="welcome-header">
             <h1>Harsha Salim</h1>
-            <p>Hi! I'm a Computer Science graduate student. I'm a software engineer interested in distributed systems, databases and blockchain, and currently interning at Alchemy. This is my personal website inspired by VSCode.</p>
+            <p>Hi! I'm a Computer Science graduate student. I'm a software engineer interested in distributed systems, databases and blockchain, and currently interning at Alchemy. This is my personal website!</p>
           </header>
           
           <section className="welcome-sections">

@@ -322,7 +322,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 35px;
+    min-height: 38px;
     overflow-x: auto;
     transition: background-color 0.3s ease;
     color: var(--text-secondary);
@@ -481,7 +481,10 @@ body {
 }
 
 .quick-actions {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
 }
 
 .quick-actions h3 {
@@ -626,6 +629,11 @@ body {
 
 /* Responsive Design - Mobile (Collapsible Sidebar) */
 @media (max-width: 480px) {
+    .header-bar {
+        padding: 8px 12px;
+        min-height: 50px; /* Increase height for mobile */
+    }
+
     /* Show mobile menu button */
     .mobile-menu-btn {
         display: block;
@@ -669,8 +677,7 @@ body {
     }
     
     .tab-bar {
-        padding-top: 50px; /* Account for mobile menu button with extra space */
-        min-height: 50px; /* Increase tab bar height on mobile */
+        /* min-height: 50px; Increase tab bar height on mobile */
     }
     
     .welcome-header h1 {
