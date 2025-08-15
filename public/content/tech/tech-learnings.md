@@ -7,6 +7,78 @@ description: Technical learning journey and knowledge sharing
 *Note - This information could be outdated, as I append what I learn on to this doc:)*
 
 ## Notes
+
+### From my internship at Alchemy
+- state management is asynchronous in react, so useEffect is used to trigger an action in response to a state change
+    - however there still may be race condition issues encountered - you may have to call some functions directly from onClick/onAction
+- ERC20 standard for creating cryptocurrency tokens on the Ethereum blockchain
+- MCP Server enables AI agents to interact with a company's APIs
+- door migration(migration from internal url to external facing url)
+    - side door is just bypassing cloudflare when hitting APIs
+    - but cloudflare does some useful thing like routing requests to the right arch version so we're trying to move everything back to the frontdoor (aka cloudflare)
+- Spanner(by Google Cloud) vs pinot(by Apache) - row vs column based
+- Git alias in terminal
+    - modify .zshrc file
+    - eg., alias gs='git status’
+- Compression/encoding techniques of URLs
+    - tried various methods and noticed the following lengths in URL:
+    - lz-string > base64 > Array representation of params with base64 > Array representation of params with base64url
+- Moving a shared folder of a monorepo to hardhat/nextjs for Vercel
+    - api_keys were not accessible - add them as env variables in vercel settings
+    - abi was not accessible from deployments - had to copy the deployments to another folder to ensure it was picked up when hosting on vercel
+- since nextjs was a package inside the project, and not at root, encountered issues deploying to Vercel due to it being unable to resolve dependencies that were declared in the inner directories
+    - Fix - vercel.json for build command, output dir, and install command, and set rootDirectory in Vercel build settings
+    - Note - vercel.json to be placed in the rootDirectory where Vercel should run
+    - Note - vercel.json configs will override the config mentioned on the settings
+    - Note - Cannot set rootDirectory using vercel.json
+- Issue - nextjs app deployed through Vercel could not read env variables as such, unless prefixed by `NEXT_PUBLIC_`
+- ens - ethereum name service - like vitalik.eth
+- Bridging - transferring assets between networks
+- MEV[Maximal Extractable Value] refers to the maximum amount of value a blockchain miner or validator can make by including, excluding, or changing the order of transactions during the block production process.
+- non custodial keys - do not store/access users’ keys
+- https://www.alchemy.com/overviews/what-is-a-bundler
+- **Fractional reserve banking** is a system where banks only keep a **fraction** of their customers' deposits on hand as reserves. They are allowed to lend out the rest of the deposits to other customers or businesses, effectively creating new money and expanding the money supply.
+- debug tracer to decode/format the debug output to a human readable form
+- https://www.alchemy.com/overviews/how-do-smart-contract-wallets-work
+- https://www.alchemy.com/docs/reference/entrypoint-v07-revert-codes
+- PM2 (process manager) used to run scripts locally in clusters
+- Grafana is a popular open-source platform primarily focused on visualization and analytics, allowing users to create interactive dashboards to monitor various metrics, logs, and traces. Orb, on the other hand, is a dynamic edge observability platform that focuses on providing insights into networks, distributed applications, and traffic flows in real-time, with a focus on dynamic agent orchestration.
+- Grafana and Splunk are both powerful tools used for data analysis and visualization, but they serve different purposes and have distinct strengths. Grafana is primarily focused on data visualization, offering rich dashboards for monitoring and exploration, especially with time-series data. Splunk, on the other hand, excels in log management, search, and real-time analysis of machine-generated data.
+- https://www.alchemy.com/blog/data-accuracy
+- https://www.alchemy.com/case-studies/dapper?source=post_page-----290bfb949a08---------------------------------------
+- [Yarn workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/) - to set up multiple packages together
+    - Yarn Workspaces vs Yarn Link:
+    
+    | **Feature** | **Yarn Workspaces** | **Yarn Link** |
+    | --- | --- | --- |
+    | **Primary Use Case** | Managing monorepos | Local testing of individual packages |
+    | **Dependency Management** | Unified installation and optimization within the monorepo | Symlinking individual packages |
+    | **Scope** | Workspace tree | System-wide (can be) |
+    | **Complexity** | More setup required initially for the monorepo structure | Simpler for linking individual packages |
+- [Turborepo](https://turborepo.com/) is a build system that optimizes build processes, caching, and task execution, particularly for large monorepos
+- [CircleCI’s dynamic configuration](https://circleci.com/docs/using-dynamic-configuration/) helps to cherry-pick which apps go through which stages based on which workspaces have changes in the PR
+- In the context of JSON-RPC (often used in web3 development for interacting with blockchains like Ethereum), **error code 1015 typically indicates a "rate limited" error**. This means you have exceeded the allowed number of requests to the service within a specific time period.
+- Different approaches to increased load, when you cannot scale using replicas
+    - Introduce latency
+    - Partitioning
+    - Prioritization of certain requests over others
+- Cloudflare is an edge CDN provider
+    - has 100s of data centers all around the world and tries to ensure compute is physically close to users
+    - Deploy logic to Cloudflare’s Points of Presence (PoPs) to handle requests
+    - Cloudflare also manages regional routing - deciding which region the requests need to go to
+    - Has firewall rules to block IPs and reject traffic, automatic DDOS protection
+    - Forwarding logic - like a retry : on a request failure of 5xx, the request is serviced through a competitor under the hood and ensures reliability
+    - What % of the time does retry happen - rarely
+- AWS data centres vs OVH (bare metal)
+    - more control and less expense on the latter
+    - no availability zones in OVH
+    - Use Istio data mesh on top of Envoy proxy to service requests in OVH
+        - https://www.apptio.com/topics/kubernetes/devops-tools/istio-envoy/
+- DLQ - Dead-Letter Queue
+    - message queue used in messaging systems to store messages that cannot be delivered or processed successfully by their intended consumers. These messages are typically those that have encountered errors, expired, or are otherwise undeliverable.
+
+------
+
 - Couldnt use KotlinLogger in IntelliJ project - this was because in Maven Central it is added as a runTimeOnly dependency, but it should be used during  compile time as well - this caused mu(microutils) to be an unresolved reference. 
     - Found this - Try to change kotlin-logging-jvm to compile time dependency (not runtime only). This is the correct one for jvm projects.
     - Changed runtimeOnly to implementation and it works as expected
