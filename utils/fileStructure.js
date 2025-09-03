@@ -76,7 +76,8 @@ const fileStructure = [
     icon: 'fa-folder',
     order: 7,
     children: [
-      { type: 'file', name: 'scratchpad.md', title: 'Scratchpad', path: 'random/scratchpad.md', order: 1 }
+      { type: 'file', name: 'scratchpad.md', title: 'Scratchpad', path: 'random/scratchpad.md', order: 1 },
+      { type: 'file', name: 'todo.md', title: 'Future Plans', path: 'random/todo.md', order: 2 }
     ]
   }
 ]

@@ -11,18 +11,18 @@ Developed blockchain portfolio tools and spam detection systems to enhance devel
 
 **Key Projects:**
 - **Portfolio Dashboard Application:** Built comprehensive NFT and ERC20 token display system for blockchain wallets with advanced spam filtering capabilities
+  - **Tech Stack:** Next.js, TypeScript, CSS | <a href="https://portfolio.alchemy.com/" target="_blank" rel="noopener noreferrer">Link</a>
   - **Developer Tool:** Used as debugging interface to demonstrate API improvements to stakeholders
-  - **Customer Demo App:** Integrated into Alchemy's demo platform for new customer onboarding and tool exploration
-
-**Technical Achievements:**
-- **ERC20 Spam Detection Pipeline:** Implemented machine learning-based spam detection achieving ~90% spam token filtering accuracy
-- **Heuristic Research & Testing:** Conducted extensive analysis of spam detection methods while ensuring zero false positives for legitimate tokens
-- **Web Scraping Infrastructure:** Built robust data collection system using Selenium to bypass Cloudflare protection on popular block explorers
-
-**Impact:**
-- Enhanced existing token APIs with spam filtering capabilities
-- Improved customer onboarding experience through interactive demo applications
-- Provided stakeholders with clear visual tools for API improvement demonstrations
+  - **Networks Support:** Support for over 20+ networks, along with the option to add new networks
+  - **Statistics:** Includes spam and cache related statistics 
+  - **Minting:** Uses Alchemy's Account Abstraction capabilities to provide sign in functionality, and can mint new NFTs to show real time updates in wallets
+- **ERC20 Spam Detection:** Built a spam detection pipeline that could classify around 85% of spam ERC20 tokens successfully
+  - **Tech Stack:** TypeScript, Terraform, Google Spanner, AWS
+  - **Heuristic Research:** Researched existing tools and related services to identify how they were implemented and their gaps in implementation, discussed extensively with stakeholders to understand how they identify spam
+    - ***Innovative Solutions:*** Most exisiting detectors were not reliable, hence had to rely on a variety of sources of input and built a unique solution
+  - **Web Scraping for Testing:** To conduct extensive testing, had to scrape spam token data from various networks, and successfully found over 20000 tokens as test data
+    - ***Bypassing Cloudflare:*** Since the most reliable test data were present in heavy Cloudflare protected web apps that blocked most known scraping tools, created scripts that used Selenium to fetch this data
+  - **Terraform Deployment:** Deployed the classification service and successfully ran it against the existing token data
 
 ### Weenix
 **Course:** Operating Systems | **USC** | Spring 2025

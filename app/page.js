@@ -635,7 +635,7 @@ export default function Home() {
         <div className="welcome-screen">
           <header className="welcome-header">
             <h1>Harsha Salim</h1>
-            <p>Hi! I'm a Computer Science graduate student. I'm a software engineer interested in distributed systems, databases and blockchain, and currently interning at Alchemy. This is my personal website!</p>
+            <p>Hi! This is my personal website!</p>
           </header>
           
           <section className="welcome-sections">
@@ -643,12 +643,7 @@ export default function Home() {
               <h3><i className="fas fa-graduation-cap"></i> University of Southern California (USC)</h3>
               <p>Graduate student at USC, Los Angeles, pursuing a Master of Science in Computer Science</p>
             </div>
-            
-            <div className="welcome-section">
-              <h3><i className="fas fa-building"></i> Alchemy</h3>
-              <p>Interning at Alchemy, New York, in the Data Services team</p>
-            </div>
-            
+
             <div className="welcome-section">
               <h3><i className="fas fa-bullseye"></i> Focus</h3>
               <p>Interested in distributed systems, databases and blockchain, and working on related projects. Let me know if you want to collaborate!</p>
@@ -657,6 +652,11 @@ export default function Home() {
             <div className="welcome-section">
               <h3><i className="fas fa-handshake"></i> Open to work</h3>
               <p>Looking for 2026 full time software engineering roles, and open to remote work.</p>
+            </div>
+
+            <div className="welcome-section">
+              <h3><i className="fas fa-building"></i> Alchemy</h3>
+              <p>My latest experience was interning at Alchemy, New York, in the Data Services team</p>
             </div>
           </section>
           
