@@ -4,9 +4,21 @@ type: tech
 description: Technical learning journey and knowledge sharing
 ---
 
-*Note - This information could be outdated, as I append what I learn on to this doc:)*
+*Note - This information could be outdated, as I only append what I learn on to this doc:)*
 
 ## Notes
+
+- Floyd's Cycle Detection Algorithm
+    - https://www.geeksforgeeks.org/dsa/floyds-cycle-finding-algorithm/
+    - when two entities of different speeds run along the same circular path, they will be at the same position on the path eventually for an instant
+    - This can be used to detect if a list has a cycle, or to find the middle of the cycle
+    - In case of a linked list, use a fast and a slow pointer that traverses the list, with the fast pointer jumping over its next node
+
+- Recusion vs iteration
+    - https://www.refactoring.com/catalog/replaceIterationWithRecursion.html
+    - Need to look at which one is faster/more efficient for each use case
+
+------
 
 ### From my internship at Alchemy
 - state management is asynchronous in react, so useEffect is used to trigger an action in response to a state change

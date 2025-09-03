@@ -4,7 +4,7 @@ type: tech
 description: Technical learning journey and knowledge sharing
 ---
 
-## [Blockchain Basics]
+## Blockchain Basics
 
 - **Proof of Work (PoW)** and **Proof of Stake (PoS)** are two types of **consensus mechanisms** used in blockchain networks to validate transactions and secure the network.
     
@@ -126,20 +126,13 @@ description: Technical learning journey and knowledge sharing
     - Relies on external protocols for scalability
 - Different kinds of nodes like archival nodes, validators etc
 
-# Alchemy Architecture
-
-![AGV_vUc76-N8G4hJYyo80wFr4wHf_g8UOawxvclByH2Q3lPkR7UeyvblAW9dJtNNAwY8fAj3jYr8HfUWKWVGydGxbzs4sII4be9i_fPcojNYTWj87_RkeZ5fW8WP.png](attachment:ba652858-1bbf-4575-83fe-eee891d634aa:AGV_vUc76-N8G4hJYyo80wFr4wHf_g8UOawxvclByH2Q3lPkR7UeyvblAW9dJtNNAwY8fAj3jYr8HfUWKWVGydGxbzs4sII4be9i_fPcojNYTWj87_RkeZ5fW8WP.png)
+# Architecture Design
 
 - AWS data centres vs OVH (bare metal)
     - more control and less expense on the latter
-    - we have moved on to the latter except for the first
     - no availability zones in OVH - so in the same physical location per region - helps with latency
     - Use Istio data mesh on top of Envoy proxy to service requests in OVH
         - https://www.apptio.com/topics/kubernetes/devops-tools/istio-envoy/
-    - We have one aws (mega) data center and the rest 4 managed using OVH
-        - OVH runs core RPC traffic
-        - AWS - has non core RPC logic - wallet services, NFT APIs, chainlake
-        - 2 in us-east-1 - one AWS and other OVH
     - data centers operate on near-complete isolation
         - reliable in the face of one of these data centers failing
         - might face latency
@@ -151,8 +144,8 @@ description: Technical learning journey and knowledge sharing
         For edge compute (in cloudflare), we do the following logic:
         
         1. route to regions based on cloudflare computed locality (e.g. Country codes)
-        2. retry requests if the origin (aka alchemy infra) responded with a 5xx HTTP Code, to a third party (3P) provider, like dRPC
-        3. we parse the request, look at the method, and if its one of the static response methods from evm spec (e.g. eth_chainId), we respond directly
+        2. retry requests if the origin responded with a 5xx HTTP Code, to a third party (3P) provider, like dRPC
+        3. parse the request, look at the method, and if its one of the static response methods from evm spec, respond directly
     - regional routing is decided by Cloudflare - which region to go to
     - additional features - firewall rules, automatic DDOS, block IPs
     - another feature - forwarding
@@ -168,10 +161,10 @@ description: Technical learning journey and knowledge sharing
         - ensure Compute Units are present and managed
         - rate limiting
 - Node gateway
-    - Alchemy has support for 100s of networks
+    - To support for 100s of networks
         - each of them have a lot of machines running nodes for these machines
-        - we need to route to them meaningfully
-        - hence we need something that sits in front of them, has the business context and do the right thing
+        - need to route to them meaningfully
+        - need something that sits in front of them, has the business context and do the right thing
         - this is the node gateway
     - node gateway has many responsibilities
     - one responsibility is shuffle sharding
